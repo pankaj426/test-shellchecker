@@ -1,0 +1,15 @@
+---
+- name: copy sentinel file to server
+  hosts: Louise
+  become: yes
+  gather_facts: true
+  tasks:
+  roles:
+    - role: sentinel
+      tags: sentinel
+    - role: crowsnest-staging
+      tags: crowsnest-staging
+    - role: crowsnest-prod
+      tags: crowsnest-prod
+    - role: lavalink
+      tags: lavalink
