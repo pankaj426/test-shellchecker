@@ -17,4 +17,4 @@ jobs:
         ignore_paths: ignoreme ignoremetoo
         ignore_names: ignorable.sh
       env:
-        SHELLCHECK_OPTS: -e SC2059 -e SC2034 -e SC1070
+        SHELLCHECK_OPTS: -e SC2059 -e SC2034 
